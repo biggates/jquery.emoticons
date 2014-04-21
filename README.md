@@ -17,7 +17,8 @@
 
 ```javascript
 $.emoticonize({
-    watch: $('#list_to_wach .tweet'),
+    watch: $('#list_to_wach'),
+    replace: '.tweet',
     input: $('#reply')
 });
 ```

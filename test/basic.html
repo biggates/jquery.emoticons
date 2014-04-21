@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Basic test</title>
+        <style>
+body, div, ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#list {
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#list li {
+    border: 1px solid #808080;
+    list-style: none outside none;
+    padding: 5px;
+    margin: 10px;
+    text-align: left;
+}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <p>Here are some random feed:</p>
+            <input type="text" id="txt_to_insert" value="" />
+            <input type="button" value="insert" id="btn_insert" />
+            <ul id="list">
+                <li>blablabla</li>
+                <li>bla bla bla</li>
+                <li>bla bla bla bla bla [QQ偷笑表情]</li>
+            </ul>
+        </div>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="../js/jquery.emoticon.js"></script>
+        <script>
+$(function(){
+    $('#btn_insert').click(function(){
+        var text = $('#txt_to_insert').val();
+        
+        var randomEmoticons = '[QQ微笑表情],[QQ撇嘴表情],[QQ色表情],[QQ发呆表情],[QQ得意表情],[QQ流泪表情],[QQ害羞表情],[QQ闭嘴表情],[QQ睡表情],[QQ大哭表情],[QQ尴尬表情],[QQ发怒表情],[QQ调皮表情],[QQ呲牙表情],[QQ惊讶表情],[QQ难过表情],[QQ酷表情],[QQ冷汗表情],[QQ抓狂表情],[QQ吐表情],[QQ偷笑表情],[QQ愉快表情],[QQ白眼表情],[QQ傲慢表情],[QQ饥饿表情],[QQ困表情],[QQ惊恐表情],[QQ流汗表情],[QQ憨笑表情],[QQ悠闲表情],[QQ奋斗表情],[QQ咒骂表情],[QQ疑问表情],[QQ嘘表情],[QQ晕表情],[QQ疯了表情],[QQ衰表情],[QQ骷髅表情],[QQ敲打表情],[QQ再见表情],[QQ擦汗表情],[QQ抠鼻表情],[QQ鼓掌表情],[QQ糗大了表情],[QQ坏笑表情],[QQ左哼哼表情],[QQ右哼哼表情],[QQ哈欠表情],[QQ鄙视表情],[QQ委屈表情],[QQ快哭了表情],[QQ阴险表情],[QQ亲亲表情],[QQ吓表情],[QQ可怜表情],[QQ菜刀表情],[QQ西瓜表情],[QQ啤酒表情],[QQ篮球表情],[QQ乒乓表情],[QQ咖啡表情],[QQ饭表情],[QQ猪头表情],[QQ玫瑰表情],[QQ凋谢表情],[QQ嘴唇表情],[QQ爱心表情],[QQ心碎表情],[QQ蛋糕表情],[QQ闪电表情],[QQ炸弹表情],[QQ刀表情],[QQ足球表情],[QQ瓢虫表情],[QQ便便表情],[QQ月亮表情],[QQ太阳表情],[QQ礼物表情],[QQ拥抱表情],[QQ强表情],[QQ弱表情],[QQ握手表情],[QQ胜利表情],[QQ抱拳表情],[QQ勾引表情],[QQ拳头表情],[QQ差劲表情],[QQ爱你表情],[QQNO表情],[QQOK表情],[QQ爱情表情],[QQ飞吻表情],[QQ跳跳表情],[QQ发抖表情],[QQ怄火表情],[QQ转圈表情],[QQ磕头表情],[QQ回头表情],[QQ跳绳表情],[QQ挥手表情],[QQ激动表情],[QQ街舞表情],[QQ献吻表情],[QQ左太极表情],[QQ右太极表情]'.split(',');
+        
+        if(!text) {
+            text = randomEmoticons[ Math.floor(Math.random() * randomEmoticons.length) ];
+        }
+        
+        $('#list').prepend($('<li>').text(text));
+    });
+    
+    $('#txt_to_insert').keyup(function(event){
+        // if key == enter then click $btn_insert
+        if(event.which == 13) {
+            $('#btn_insert').click();
+        }
+    });
+    
+    $.emoticonize({
+        watch: $('#list'),
+        replace: 'li'
+    });
+});        
+        </script>
+    </body>
+</html>

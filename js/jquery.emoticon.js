@@ -6,8 +6,9 @@
     var emoticons = {
         qq: {
             prefix: 'QQ',
-            names: 'Î¢Ğ¦,Æ²×ì,É«,·¢´ô,µÃÒâ,Á÷Àá,º¦Ğß,±Õ×ì,Ë¯,´ó¿Ş,ŞÏŞÎ,·¢Å­,µ÷Æ¤,ßÚÑÀ,¾ªÑÈ,ÄÑ¹ı,¿á,Àäº¹,×¥¿ñ,ÍÂ,ÍµĞ¦,Óä¿ì,°×ÑÛ,°ÁÂı,¼¢¶ö,À§,¾ª¿Ö,Á÷º¹,º©Ğ¦,ÓÆÏĞ,·Ü¶·,ÖäÂî,ÒÉÎÊ,Ğê,ÔÎ,·èÁË,Ë¥,÷¼÷Ã,ÇÃ´ò,ÔÙ¼û,²Áº¹,¿Ù±Ç,¹ÄÕÆ,ôÜ´óÁË,»µĞ¦,×óºßºß,ÓÒºßºß,¹şÇ·,±ÉÊÓ,Î¯Çü,¿ì¿ŞÁË,ÒõÏÕ,Ç×Ç×,ÏÅ,¿ÉÁ¯,²Ëµ¶,Î÷¹Ï,Æ¡¾Æ,ÀºÇò,Æ¹ÅÒ,¿§·È,·¹,ÖíÍ·,Ãµ¹å,µòĞ»,×ì´½,°®ĞÄ,ĞÄËé,µ°¸â,ÉÁµç,Õ¨µ¯,µ¶,×ãÇò,Æ°³æ,±ã±ã,ÔÂÁÁ,Ì«Ñô,ÀñÎï,Óµ±§,Ç¿,Èõ,ÎÕÊÖ,Ê¤Àû,±§È­,¹´Òı,È­Í·,²î¾¢,°®Äã,NO,OK,°®Çé,·ÉÎÇ,ÌøÌø,·¢¶¶,âæ»ğ,×ªÈ¦,¿ÄÍ·,»ØÍ·,ÌøÉş,»ÓÊÖ,¼¤¶¯,½ÖÎè,Ï×ÎÇ,×óÌ«¼«,ÓÒÌ«¼«'.split(),
+            names: 'å¾®ç¬‘,æ’‡å˜´,è‰²,å‘å‘†,å¾—æ„,æµæ³ª,å®³ç¾,é—­å˜´,ç¡,å¤§å“­,å°´å°¬,å‘æ€’,è°ƒçš®,å‘²ç‰™,æƒŠè®¶,éš¾è¿‡,é…·,å†·æ±—,æŠ“ç‹‚,å,å·ç¬‘,æ„‰å¿«,ç™½çœ¼,å‚²æ…¢,é¥¥é¥¿,å›°,æƒŠæ,æµæ±—,æ†¨ç¬‘,æ‚ é—²,å¥‹æ–—,å’’éª‚,ç–‘é—®,å˜˜,æ™•,ç–¯äº†,è¡°,éª·é«…,æ•²æ‰“,å†è§,æ“¦æ±—,æŠ é¼»,é¼“æŒ,ç³—å¤§äº†,åç¬‘,å·¦å“¼å“¼,å³å“¼å“¼,å“ˆæ¬ ,é„™è§†,å§”å±ˆ,å¿«å“­äº†,é˜´é™©,äº²äº²,å“,å¯æ€œ,èœåˆ€,è¥¿ç“œ,å•¤é…’,ç¯®çƒ,ä¹’ä¹“,å’–å•¡,é¥­,çŒªå¤´,ç«ç‘°,å‡‹è°¢,å˜´å”‡,çˆ±å¿ƒ,å¿ƒç¢,è›‹ç³•,é—ªç”µ,ç‚¸å¼¹,åˆ€,è¶³çƒ,ç“¢è™«,ä¾¿ä¾¿,æœˆäº®,å¤ªé˜³,ç¤¼ç‰©,æ‹¥æŠ±,å¼º,å¼±,æ¡æ‰‹,èƒœåˆ©,æŠ±æ‹³,å‹¾å¼•,æ‹³å¤´,å·®åŠ²,çˆ±ä½ ,NO,OK,çˆ±æƒ…,é£å»,è·³è·³,å‘æŠ–,æ€„ç«,è½¬åœˆ,ç£•å¤´,å›å¤´,è·³ç»³,æŒ¥æ‰‹,æ¿€åŠ¨,è¡—èˆ,çŒ®å»,å·¦å¤ªæ,å³å¤ªæ'.split(','),
             image: 'qq.png',
+            base: '../images/',
             total: 105,
             width: 29,
             height: 29,
@@ -16,8 +17,9 @@
         },
         emoji: {
             prefix: 'emoji',
-            names: 'Ğ¦Á³,¿ªĞÄ,´óĞ¦,ÈÈÇé,Õ£ÑÛ,É«,½ÓÎÇ,Ç×ÎÇ,Á³ºì,Â¶³İĞ¦,ÂúÒâ,Ï·Åª,ÍÂÉà,ÎŞÓï,µÃÒâ,º¹,Ê§Íû,µÍÂä,ÅŞ,½¹ÂÇ,µ£ĞÄ,Õğ¾ª,»ÚºŞ,ÑÛÀá,¿Ş,ÆÆÌéÎªĞ¦,ÔÎ,¿Ö¾å,ĞÄ·³,ÉúÆø,Ë¯¾õ,Éú²¡,¶ñÄ§,ÍâĞÇÈË,ĞÄ,ĞÄËé,Çğ±ÈÌØ,ÉÁË¸,ĞÇĞÇ,Ì¾ºÅ,ÎÊºÅ,Ë¯×Å,Ë®µÎ,ÒôÀÖ,»ğ,±ã±ã,Ç¿,Èõ,È­Í·,Ê¤Àû,ÉÏ,ÏÂ,ÓÒ,×ó,µÚÒ»,Ç¿×³,ÎÇ,ÈÈÁµ,ÄĞº¢,Å®º¢,Å®Ê¿,ÄĞÊ¿,ÌìÊ¹,÷¼÷Ã,ºì´½,Ì«Ñô,ÏÂÓê,¶àÔÆ,Ñ©ÈË,ÔÂÁÁ,ÉÁµç,º£ÀË,Ã¨,Ğ¡¹·,ÀÏÊó,²ÖÊó,ÍÃ×Ó,¹·,ÇàÍÜ,ÀÏ»¢,¿¼À­,ĞÜ,Öí,Å£,Ò°Öí,ºï×Ó,Âí,Éß,¸ë×Ó,¼¦,Æó¶ì,Ã«³æ,ÕÂÓã,Óã,¾¨Óã,º£ëà,Ãµ¹å,»¨,×ØéµÊ÷,ÏÉÈËÕÆ,ÀñºĞ,ÄÏ¹ÏµÆ,¹í»ê,Ê¥µ®ÀÏÈË,Ê¥µ®Ê÷,ÀñÎï,Áå,Çì×£,ÆøÇò,CD,Ïà»ú,Â¼Ïñ»ú,µçÄÔ,µçÊÓ,µç»°,½âËø,Ëø,Ô¿³×,³É½»,µÆÅİ,ÓÊÏä,Ô¡¸×,Ç®,Õ¨µ¯,ÊÖÇ¹,Ò©Íè,éÏé­Çò,ÀºÇò,×ãÇò,°ôÇò,¸ß¶û·ò,½±±­,ÈëÇÖÕß,³ª¸è,¼ªËû,±È»ùÄá,»Ê¹Ú,ÓêÉ¡,ÊÖÌá°ü,¿Úºì,½äÖ¸,×êÊ¯,¿§·È,Æ¡¾Æ,¸É±­,¼¦Î²¾Æ,ºº±¤,ÊíÌõ,ÒâÃæ,ÊÙË¾,ÃæÌõ,¼åµ°,±ù¼¤Áè,µ°¸â,Æ»¹û,·É»ú,»ğ¼ı,×ÔĞĞ³µ,¸ßÌú,¾¯¸æ,Æì,ÄĞÈË,Å®ÈË,O,X,°æÈ¨,×¢²áÉÌ±ê,ÉÌ±ê'.split(),
+            names: 'ç¬‘è„¸,å¼€å¿ƒ,å¤§ç¬‘,çƒ­æƒ…,çœ¨çœ¼,è‰²,æ¥å»,äº²å»,è„¸çº¢,éœ²é½¿ç¬‘,æ»¡æ„,æˆå¼„,åèˆŒ,æ— è¯­,å¾—æ„,æ±—,å¤±æœ›,ä½è½,å‘¸,ç„¦è™‘,æ‹…å¿ƒ,éœ‡æƒŠ,æ‚”æ¨,çœ¼æ³ª,å“­,ç ´æ¶•ä¸ºç¬‘,æ™•,ææƒ§,å¿ƒçƒ¦,ç”Ÿæ°”,ç¡è§‰,ç”Ÿç—…,æ¶é­”,å¤–æ˜Ÿäºº,å¿ƒ,å¿ƒç¢,ä¸˜æ¯”ç‰¹,é—ªçƒ,æ˜Ÿæ˜Ÿ,å¹å·,é—®å·,ç¡ç€,æ°´æ»´,éŸ³ä¹,ç«,ä¾¿ä¾¿,å¼º,å¼±,æ‹³å¤´,èƒœåˆ©,ä¸Š,ä¸‹,å³,å·¦,ç¬¬ä¸€,å¼ºå£®,å»,çƒ­æ‹,ç”·å­©,å¥³å­©,å¥³å£«,ç”·å£«,å¤©ä½¿,éª·é«…,çº¢å”‡,å¤ªé˜³,ä¸‹é›¨,å¤šäº‘,é›ªäºº,æœˆäº®,é—ªç”µ,æµ·æµª,çŒ«,å°ç‹—,è€é¼ ,ä»“é¼ ,å…”å­,ç‹—,é’è›™,è€è™,è€ƒæ‹‰,ç†Š,çŒª,ç‰›,é‡çŒª,çŒ´å­,é©¬,è›‡,é¸½å­,é¸¡,ä¼é¹…,æ¯›è™«,ç« é±¼,é±¼,é²¸é±¼,æµ·è±š,ç«ç‘°,èŠ±,æ£•æ¦ˆæ ‘,ä»™äººæŒ,ç¤¼ç›’,å—ç“œç¯,é¬¼é­‚,åœ£è¯è€äºº,åœ£è¯æ ‘,ç¤¼ç‰©,é“ƒ,åº†ç¥,æ°”çƒ,CD,ç›¸æœº,å½•åƒæœº,ç”µè„‘,ç”µè§†,ç”µè¯,è§£é”,é”,é’¥åŒ™,æˆäº¤,ç¯æ³¡,é‚®ç®±,æµ´ç¼¸,é’±,ç‚¸å¼¹,æ‰‹æª,è¯ä¸¸,æ©„æ¦„çƒ,ç¯®çƒ,è¶³çƒ,æ£’çƒ,é«˜å°”å¤«,å¥–æ¯,å…¥ä¾µè€…,å”±æ­Œ,å‰ä»–,æ¯”åŸºå°¼,çš‡å† ,é›¨ä¼,æ‰‹æåŒ…,å£çº¢,æˆ’æŒ‡,é’»çŸ³,å’–å•¡,å•¤é…’,å¹²æ¯,é¸¡å°¾é…’,æ±‰å ¡,è–¯æ¡,æ„é¢,å¯¿å¸,é¢æ¡,ç…è›‹,å†°æ¿€å‡Œ,è›‹ç³•,è‹¹æœ,é£æœº,ç«ç®­,è‡ªè¡Œè½¦,é«˜é“,è­¦å‘Š,æ——,ç”·äºº,å¥³äºº,O,X,ç‰ˆæƒ,æ³¨å†Œå•†æ ‡,å•†æ ‡'.split(','),
             image: 'emoji.png',
+            base: '../images/',
             total: 168,
             width: 29,
             height: 29,
@@ -28,6 +30,7 @@
 
     var defaultOptions = {
         watch: null,
+        replace: null,
         input: null,
         emoticons: emoticons
     };
@@ -36,13 +39,15 @@
      * Handles browser differences
      * @param $toWatch $() elements to watch
      */
-    var createWatchFunction = function($toWatch, replacementArray){
+    var createWatchFunction = function($toWatch, replacement){
         // Firefox & Chrome
         var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver
         if(MutationObserver){
             var observer = new MutationObserver(function(mutations){
                 mutations.forEach(function(mutation){
-                    callFunction(mutation, replacementArray);
+                    for(var i = 0; i < mutation.addedNodes.length; i++){
+                        callFunction(mutation.addedNodes.item(i), replacement);
+                    }
                 });
             });
             
@@ -60,29 +65,26 @@
     /**
      * This is the actual 'replace' function
      * @param newElement the observed new inserted dom element
-     * @param replacementArray [emoticonNames] the applied array
+     * @param replacement {emoticonNames: eset} the applied map
      */
-    var callFunction = function(newElement, replacementArray){
+    var callFunction = function(newElement, replacement){
         var $elem = $(newElement);
         if($elem.data('emoticonized')) {
             return;
         } else {
         
-            var text = $elem.text();
+            var text = $elem.html();
             // replacement happens here
-            for(idx : replacementArray){
-                name = replacementArray[idx];
-                text = text.replace('[' + name + ']', '<span class="emoticon em_' + name + '"></span>');
-                text = text.replace(/\[.+\]/g, function(content){
-                    // TODO check whether content is in replacementArray
-                    if(content){
-                        return '<span class="emoticon em_' + content + '" title="' + content + '"></span>';
-                    } else {
-                        return content;
-                    }
-                });
-            }
-            $elem.text(text).data('emoticonized', true);
+
+            text = text.replace(/\[(.+)\]/g, function(_notUsed, content){
+                if( replacement[content] ){
+                    return '<div class="emoticon em_' + replacement[content] + ' em_' + content + '" title="' + content + '"></div>';
+                } else {
+                    return content;
+                }
+            });
+            
+            $elem.html(text).data('emoticonized', true);
         }
     };
     
@@ -92,9 +94,14 @@
     */
     function createCSSClass(selector, style) {
         if(typeof(style) !== 'string') {
-            style = JSON.stringify(style);
+            var t = '';
+            for(name in style) {
+                t += name + ': ' + style[name] + ';';
+            }
+            
+            style = t;
         }
-        console.log('createCssClass()', selector, style);
+        // console.log('createCssClass()', selector, style);
         if (!document.styleSheets) {
             return;
         }
@@ -167,37 +174,49 @@
         }
     }
     
-    $.fn.emoticonize = function(options){
-        var opts = $.extend(true, {}, emoticons, options);
+    $.emoticonize = function(options){
+        var opts = $.extend(true, {}, {emoticons: emoticons}, options);
     
-        // TOOD create a table of valid emoticons
-        var replacementArray = [];
+        // create a map of valid emoticons
+        var replacement = {};
         
         // create style classes
-        for(i : options.emoticons) {
-            var eset = options.emoticons[i];
+        for(i in opts.emoticons) {
+            var eset = opts.emoticons[i];
             var currentRow = 0;
             var currentColumn = 0;
-            for(int j = 0; j < eset.total; j++){
+            
+            createCSSClass('.emoticon.em_' + eset.prefix, {
+                display: 'inline-block',
+                width: eset.width + 'px',
+                height: eset.height + 'px',
+                'line-height': eset.height + 'px',
+                'background-image': 'url("' + eset.base + eset.image + '")'
+            });
+            
+            for(var j = 0; j < eset.total; j++) {
                 var name = eset.names[j];
-                var className = eset.prefix + '±íÇé' + name;
-                replacementArray.push(className);
+                var className = eset.prefix + name + 'è¡¨æƒ…';
+                replacement[className] = eset.prefix;
                 if(currentColumn >= eset.columns){
                     currentColumn = 0;
                     currentRow ++;
                 }
                 createCSSClass('.emoticon.em_' + className, {
-                    width: eset.width + 'px',
-                    height: eset.height + 'px',
-                    background-image: 'url("' + eset.image + '")',
-                    background-position: '' + currentColumn * eset.width + 'px ' + currentRow * eset.height + 'px'
+                    'background-position': '' + -currentColumn * eset.width + 'px ' + -currentRow * eset.height + 'px'
                 });
+                
+                currentColumn ++;
             }
         }
+        
+        // apply immediately once
+        $(opts.watch).children(opts.replace).each(function(){
+            callFunction($(this), replacement);
+        });
     
-        return $.each(function(){
-            var $container = options.watch || $(this);
-            createWatchFunction($container, replacementArray);
+        return $(opts.watch).each(function(){
+            createWatchFunction($(this), replacement);
         });
     };
 })(jQuery); 
