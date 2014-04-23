@@ -25,6 +25,17 @@
             height: 29,
             rows: 12,
             columns: 15
+        },
+        xueqiu: {
+            prefix: '雪球',
+            names: '笑,大笑,鼓鼓掌,俏皮,加油,赚大了,牛,怒了,哭泣,亏大了,困顿,好失望,滴汗,为什么,跪了,摊手,不屑,好逊,关灯吃面,呵呵傻逼,割肉,卖身,吐血,可怜,害羞,抠鼻,囧,好困惑,想一下,傲,不说了,围观,很赞,不赞,赞成,干杯,心心,心碎了,献花花,一坨屎,满仓,空仓,复盘,抄底,能力圈,看空,看多,加仓,减仓,买入,卖出,毛估估,成交,护城河'.split(','),
+            image: 'xueqiu.png',
+            base: '../images/',
+            total: 54,
+            width: 28,
+            height: 26,
+            rows: 6,
+            columns: 9
         }
     };
 
@@ -125,8 +136,12 @@
                         styleSheet = document.styleSheets[i];
                     }
                 } else if (mediaType == "object") {
-                    if (media.mediaText == "" || (media.mediaText.indexOf("screen") != -1)) {
-                        styleSheet = document.styleSheets[i];
+                    try{
+                        if (media.mediaText == "" || (media.mediaText.indexOf("screen") != -1)) {
+                            styleSheet = document.styleSheets[i];
+                        }
+                    } catch (err){
+                        // Firefox sometimes throws exception "Permission denied to access property 'mediaText'"
                     }
                 }
      
@@ -154,21 +169,25 @@
         }
      
         if (mediaType == "string") {
+            /*
             for (i = 0; i < styleSheet.rules.length; i++) {
                 if (styleSheet.rules[i].selectorText.toLowerCase() == selector.toLowerCase()) {
                     styleSheet.rules[i].style.cssText = style;
                     return;
                 }
             }
+            */
      
             styleSheet.addRule(selector, style);
         } else if (mediaType == "object") {
+            /*
             for (i = 0; i < styleSheet.cssRules.length; i++) {
                 if (styleSheet.cssRules[i].selectorText.toLowerCase() == selector.toLowerCase()) {
                     styleSheet.cssRules[i].style.cssText = style;
                     return;
                 }
             }
+            */
      
             styleSheet.insertRule(selector + "{" + style + "}", 0);
         }
